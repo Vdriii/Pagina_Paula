@@ -106,6 +106,12 @@ header p.intro {
 .card p {
     margin-bottom:12px;
 }
+.card img {
+    display:block;
+    margin:10px auto;
+    max-width:90%;
+    border-radius:10px;
+}
 
 /* Separador */
 .separator {
@@ -144,7 +150,7 @@ footer {
     <h1>Histología</h1>
     <p class="intro">
         Bienvenido a esta página educativa sobre histología, la ciencia que estudia los tejidos del cuerpo humano a nivel microscópico. 
-        Aquí encontrarás información clara y didáctica sobre la piel, glándulas salivales, páncreas, tubo digestivo, presentada de manera visual y organizada, y el hígado.
+        Aquí encontrarás información clara y didáctica sobre piel, glándulas salivales, páncreas, tráquea, hígado y más.
     </p>
 </header>
 
@@ -166,11 +172,11 @@ footer {
             <h2>Inicio</h2>
             <p>En esta página vamos a explorar los distintos tejidos y órganos del cuerpo humano, entendiendo su estructura microscópica y función en el organismo.</p>
             <ul>
-                <li><strong>Piel:</strong> Conoceremos epidermis, dermis e hipodermis, y sus funciones protectoras.</li>
-                <li><strong>Glándulas salivales:</strong> Aprenderemos sobre los acinos y conductos encargados de producir y transportar saliva.</li>
-                <li><strong>Páncreas:</strong> Diferenciaremos su función exocrina y endocrina, y su papel en digestión y regulación hormonal.</li>
-                <li><strong>Tubo digestivo:</strong> Analizaremos la estructura y función de esófago y estómago.</li>
-                <li><strong>Hígado:</strong> Exploraremos su histología y función en el metabolismo.</li>
+                <li><strong>Piel:</strong> Epidermis, dermis e hipodermis, y sus funciones protectoras.</li>
+                <li><strong>Glándulas salivales:</strong> Acinos y conductos que producen y transportan saliva.</li>
+                <li><strong>Páncreas:</strong> Función exocrina y endocrina, digestión y regulación hormonal.</li>
+                <li><strong>Tubo digestivo:</strong> Estructura y función de esófago y estómago.</li>
+                <li><strong>Hígado:</strong> Histología y función en el metabolismo.</li>
             </ul>
         </div>
 
@@ -186,21 +192,33 @@ footer {
     <section id="piel" class="content-section">
         <div class="card">
             <h2>Histología de la piel</h2>
+            <p>La piel es el órgano más extenso del cuerpo humano y actúa como nuestra primera línea de defensa. Histológicamente se organiza en tres capas principales, que varían en grosor y composición según la zona del cuerpo.</p>
+        </div>
+        <div class="card">
             <h3>Epidermis</h3>
+            <p>Es la capa más externa, compuesta por un epitelio estratificado plano queratinizado. Es avascular y se nutre por difusión de la dermis. Se divide en:</p>
             <ul>
-                <li>Estrato basal: melanocitos y células de Merkel.</li>
-                <li>Estrato espinoso: células de Langerhans.</li>
-                <li>Estrato lúcido: presente solo en piel gruesa.</li>
-                <li>Estrato córneo: corneocitos.</li>
+                <li><strong>Estrato Basal:</strong> Contiene melanocitos y células de Merkel.</li>
+                <li><strong>Estrato Espinoso:</strong> Contiene células de Langerhans.</li>
+                <li><strong>Estrato Lúcido:</strong> Presente solo en piel gruesa.</li>
+                <li><strong>Estrato Córneo:</strong> Capas de corneocitos que se descaman continuamente.</li>
             </ul>
+            <img src="piel_epidermis.jpg" alt="Epidermis">
         </div>
         <div class="card">
             <h3>Dermis</h3>
-            <p>Tejido conjuntivo con vasos sanguíneos, nervios y anexos cutáneos.</p>
+            <p>Es la capa media, compuesta por tejido conjuntivo rico en colágeno, fibras elásticas, vasos sanguíneos y nervios. Se divide en:</p>
+            <ul>
+                <li><strong>Dermis Papilar:</strong> Nutrición de la epidermis y sensibilidad táctil.</li>
+                <li><strong>Dermis Reticular:</strong> Aporta elasticidad y resistencia.</li>
+            </ul>
+            <p>Contiene folículos pilosos, glándulas sebáceas y sudoríparas, y corpúsculos sensoriales.</p>
+            <img src="piel_dermis.jpg" alt="Dermis">
         </div>
         <div class="card">
-            <h3>Hipodermis</h3>
-            <p>Tejido adiposo que protege y almacena energía.</p>
+            <h3>Hipodermis / Tejido Subcutáneo</h3>
+            <p>Capa más interna, formada por tejido adiposo y conjuntivo laxo. Función: almacenar energía, aislar térmicamente y proteger de impactos.</p>
+            <img src="piel_hipodermis.jpg" alt="Hipodermis">
         </div>
     </section>
 
@@ -208,12 +226,16 @@ footer {
     <section id="salivales" class="content-section">
         <div class="card">
             <h2>Glándulas salivales</h2>
+            <p>Órganos exocrinos encargados de producir saliva, formada por acinos y conductos.</p>
+        </div>
+        <div class="card">
             <h3>Adenómeros</h3>
             <ul>
                 <li>Acinos serosos</li>
                 <li>Acinos mucosos</li>
                 <li>Acinos mixtos</li>
             </ul>
+            <img src="gl_salve_acinos.jpg" alt="Acinos glándulas salivales">
         </div>
         <div class="card">
             <h3>Sistema de conductos</h3>
@@ -222,27 +244,33 @@ footer {
                 <li>Conducto estriado</li>
                 <li>Conducto excretor</li>
             </ul>
+            <img src="gl_salve_conductos.jpg" alt="Conductos glándulas salivales">
         </div>
     </section>
 
     <!-- Sección Páncreas -->
     <section id="pancreas" class="content-section">
         <div class="card">
-            <h2>Histología del páncreas</h2>
-            <h3>Componente exocrino</h3>
+            <h2>Histología del Páncreas</h2>
+            <p>El páncreas tiene funciones exocrinas y endocrinas importantes:</p>
+        </div>
+        <div class="card">
+            <h3>Componente Exocrino</h3>
             <ul>
                 <li>Acinos pancreáticos</li>
                 <li>Células acinares</li>
                 <li>Células centroacinares</li>
             </ul>
+            <img src="pancreas_exocrino.jpg" alt="Páncreas exocrino">
         </div>
         <div class="card">
-            <h3>Componente endocrino</h3>
+            <h3>Componente Endocrino</h3>
             <ul>
                 <li>Células alfa (glucagón)</li>
                 <li>Células beta (insulina)</li>
                 <li>Células delta (somatostatina)</li>
             </ul>
+            <img src="pancreas_endocrino.jpg" alt="Páncreas endocrino">
         </div>
     </section>
 
@@ -250,30 +278,19 @@ footer {
     <section id="traquea" class="content-section">
         <div class="card">
             <h2>Histología y Citología del Aparato Respiratorio</h2>
-            <p>La función principal del aparato respiratorio es el intercambio de gases entre la atmósfera y el sistema vascular, aportando oxígeno y retirando CO₂ de la sangre.</p>
+            <p>Función: intercambio de gases entre la atmósfera y la sangre.</p>
             <h3>Tráquea</h3>
             <h4>Histología</h4>
-            <p>La tráquea se encuentra revestida por un epitelio cilíndrico pseudoestratificado ciliado con células caliciformes. En la submucosa existen glándulas seromucosas. Por debajo aparecen anillos de cartílago hialino y posteriormente una capa adventicia.</p>
+            <p>Epitelio pseudoestratificado ciliado con células caliciformes. Submucosa con glándulas seromucosas. Anillos de cartílago hialino.</p>
             <h4>Citología</h4>
             <ul>
                 <li>Células basales</li>
                 <li>Células cilíndricas ciliadas</li>
                 <li>Células caliciformes</li>
             </ul>
-            <h4>Observaciones microscópicas</h4>
-            <div style="text-align:center;">
-                <img src="Captura_citologia.PNG" width="250">
-                <img src="Captura_hitologia.PNG" width="250">
-            </div>
             <h4>Imágenes microscópicas</h4>
-            <div style="text-align:center;">
-                <p><b>Objetivo 4x</b></p>
-                <img src="Captura4x.PNG" width="170">
-                <p><b>Objetivo 10x</b></p>
-                <img src="Captura10x.PNG" width="170">
-                <p><b>Objetivo 40x</b></p>
-                <img src="Captura40x.PNG" width="170">
-            </div>
+            <img src="Captura_citologia.PNG" alt="Citología">
+            <img src="Captura_hitologia.PNG" alt="Histología">
         </div>
     </section>
 
@@ -281,7 +298,37 @@ footer {
     <section id="higado" class="content-section">
         <div class="card">
             <h2>Histología del Hígado</h2>
-            <p>Aquí podrás añadir información sobre la histología del hígado, sus hepatocitos, lobulillos hepáticos y vasos sanguíneos.</p>
+            <p>El hígado está organizado en un parénquima glandular sólido de origen epitelial, estructurado en unidades morfo-funcionales altamente organizadas, cuya función principal es fabricar y secretar sustancias.</p>
+        </div>
+        <div class="card">
+            <h3>Lobulillo Hepático</h3>
+            <p>El hígado se divide en lobulillos de forma prismática hexagonal.</p>
+            <ul>
+                <li><strong>Vena Centrolobulillar:</strong> Situada en el eje longitudinal del lobulillo, origen del sistema de venas hepáticas que drenan hacia la vena cava inferior.</li>
+                <li><strong>Triada Portal (Espacio de Kiernan):</strong> Ubicada en los ángulos del hexágono dentro de un estroma de tejido conjuntivo laxo, contiene:
+                    <ul>
+                        <li>Rama de la arteria hepática: epitelio plano simple.</li>
+                        <li>Rama de la vena porta: epitelio plano simple con luz amplia.</li>
+                        <li>Conducto biliar: epitelio cúbico simple.</li>
+                    </ul>
+                </li>
+            </ul>
+            <img src="higado_lobulillo.jpg" alt="Lobulillo Hepático">
+        </div>
+        <div class="card">
+            <h3>Hepatocitos</h3>
+            <p>Células grandes en forma de cubo encargadas de producir bilis, almacenar glucógeno y lípidos, y desintoxicar la sangre.</p>
+            <img src="hepatocitos.jpg" alt="Hepatocitos">
+        </div>
+        <div class="card">
+            <h3>Sinusoides Hepáticos</h3>
+            <p>Capilares amplios formados por epitelio fenestrado que permite el intercambio de sustancias entre la sangre de la vena porta y la arteria hepática, ubicados entre los cordones de hepatocitos.</p>
+            <img src="sinusoides.jpg" alt="Sinusoides Hepáticos">
+        </div>
+        <div class="card">
+            <h3>Espacio de Disse</h3>
+            <p>Espacio entre el epitelio de los sinusoides y los hepatocitos, donde ocurre el intercambio de nutrientes.</p>
+            <img src="disse.jpg" alt="Espacio de Disse">
         </div>
     </section>
 
