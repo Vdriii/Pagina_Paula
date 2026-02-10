@@ -24,6 +24,14 @@ h1 {
     margin:0;
 }
 
+/* Introducción */
+.intro {
+    margin-top:10px;
+    font-size:16px;
+    color:#fff;
+}
+
+/* Contenedor principal */
 .container {
     max-width:900px;
     margin:auto;
@@ -74,13 +82,28 @@ footer {
     font-size:14px;
     color:#666;
 }
+
+/* Datos del autor */
+.author {
+    margin-top:40px;
+    padding:15px;
+    background:#f0f0f0;
+    border-radius:8px;
+}
+.author h3 {
+    margin-top:0;
+    color:#822c2c;
+}
 </style>
 </head>
 <body>
 
 <header>
-    <h1>Histología: la ventana microscópica al cuerpo humano</h1>
-    <p>Apuntes teóricos</p>
+    <h1>Histología</h1>
+    <p class="intro">
+        Bienvenido a esta página educativa sobre histología, la ciencia que estudia los tejidos del cuerpo humano a nivel microscópico. 
+        Aquí encontrarás información clara y didáctica sobre la piel, glándulas salivales, páncreas y tubo digestivo.
+    </p>
 </header>
 
 <div class="container">
@@ -91,11 +114,18 @@ footer {
         <button onclick="showSection('salivales')">Glándulas Salivales</button>
         <button onclick="showSection('pancreas')">Páncreas</button>
         <button onclick="showSection('digestivo')">Tubo Digestivo</button>
+        <button onclick="showSection('autor')">Autor</button>
     </div>
 
     <section id="inicio" class="content-section">
         <h2>Inicio</h2>
-        <p>Página web dedicada al estudio de la histología con fines educativos dentro del FP Superior de Anatomía Patológica y Diagnóstico.</p>
+        <p>En esta página vamos a estudiar los diferentes tejidos y órganos del cuerpo humano, destacando sus características histológicas y funciones.</p>
+        <ul>
+            <li><strong>Piel:</strong> Aprenderemos sobre la epidermis, dermis e hipodermis y sus funciones protectoras.</li>
+            <li><strong>Glándulas salivales:</strong> Estudiaremos los acinos y los conductos que producen y transportan saliva.</li>
+            <li><strong>Páncreas:</strong> Diferenciaremos entre su componente exocrino y endocrino, y su papel en la digestión y regulación hormonal.</li>
+            <li><strong>Tubo digestivo:</strong> Conoceremos la estructura y función del esófago y el estómago a nivel histológico.</li>
+        </ul>
     </section>
 
     <section id="piel" class="content-section">
@@ -153,6 +183,15 @@ footer {
         <p>Segmento encargado de la digestión química y mecánica del alimento.</p>
     </section>
 
+    <section id="autor" class="content-section">
+        <div class="author">
+            <h3>Datos del autor</h3>
+            <p><strong>Nombre:</strong> [Tu nombre aquí]</p>
+            <p><strong>Curso:</strong> FP Superior Anatomía Patológica y Diagnóstico</p>
+            <p><strong>Fecha:</strong> [Fecha de realización]</p>
+        </div>
+    </section>
+
 </div>
 
 <footer>
@@ -163,15 +202,13 @@ footer {
 function showSection(id) {
     const sections = document.querySelectorAll('.content-section');
     sections.forEach(section => {
-        if(section.id === id) {
-            section.style.display = 'block';
-        } else {
-            section.style.display = 'none';
-        }
+        section.style.display = (section.id === id) ? 'block' : 'none';
     });
 }
+
+// Mostrar inicio por defecto al cargar la página
+window.onload = () => showSection('inicio');
 </script>
 
 </body>
 </html>
-
